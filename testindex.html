@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAX COMFORT</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="burger_menu" onclick="burgerMenu()">
+                <img src="img/burger-menu.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">ჩვენს შესახებ</a>
+                    </li>
+                    <li>
+                        <a href="#">მომსახურება</a>
+                    </li>
+                    <li>
+                        <a href="#">მედია-ცენტრი</a>
+                    </li>
+                    <li>
+                        <a href="#">სად გვიპოვნოთ</a>
+                    </li>
+                    <li>
+                        <a href="#">კონტაქტი</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-contact" >
+                <div class="menu-contact-icon" onclick="cotacta()">
+                    <p>phone</p>
+                </div>
+                <div class="contact_number" >
+                    <span >         <!--  ეს გავარკვიოოო -->
+                        (+995) 322 477 555
+                    </span>
+                </div>
+                
+                <div class="leng">
+                    <span>EN</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="main-header">
+        <div class="products-search">
+            <div class="main-logo">
+                <a href="index.html"><img src="img/logos.png"></a>
+            </div>
+            <div class="search" >
+                <form >
+                    <select name="category" >
+                        <option value="category">კატეგორია</option>
+                        <option value="saab">Saab</option>
+                        <option value="opel">Opel</option>
+                        <option value="audi">Audi</option>
+                      </select>
+                    <input type="text" placeholder="საძიებო სიტყვა">
+                    <button class="search-btn" type="submit">
+                        <img class="search-icon" src="img/search-icon.png" >
+                    </button>
+                </form>
+            </div>
+            <div class="responsive-search " onclick="respoSearch()">
+                <img src="img/search.png" alt="">
+            </div>
+            <div class="product-button"  >
+                
+                <div class="product-btn">
+                    <img src="img/three line.png" alt="">
+                    <span>პროდუქცია</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+
+    <script>
+        $(".burger-menu").click(function() {
+            console.log("traki");
+            $(".header-nav .header-nav-items").addClass("nav--open")
+
+        })
+        $(".menu-close").click(function() {
+            $(".header-nav-items .menu").removeClass("nav--open")
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="far fa-question-circle"></i> 
+                        </span>
+                        <span class="title">helf</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="title">Sing Out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main">
+            <div class="main-head">
+                <h1>პროდუქცია</h1>
+                <div class="share">
+                    <p>ბმულის გაზიარება</p>
+                    <a href="#"><img src="img/facebook (1).png" alt=""></a>
+                    <a href="#"><img src="img/twitter.png" alt=""></a>
+                    <a href="#"><img src="img/whatsapp.png" alt=""></a>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="product-info">
+                    <div class="product-photo">
+                        <div class="product-main_photo">
+                            <img src="img/product.png" alt="">
+                        </div>
+                        <div class="more-phoros">
+                            <img src="img/product.png" class="alt-photo">
+                            <img src="img/product.png" class="alt-photo">
+                            <img src="img/product.png" class="alt-photo">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div class="description-head">
+                            <h1>სტაციონარული ქვაბის სანთურა</h1>
+                            <span class="point">
+                                საწყობშია
+                            </span>
+                        </div>
+                        <div class="description-body">
+                            <p>
+                                იტალიური წარმოების, უმაღლესი ხარისხის
+                                Cib Unigas-ს წარმოების გაზის სანთურა 
+                                გამოიყენება ცეცხლის გენერირებისათვის. 
+                                სანთურა საწვავად ბუნებივ აირს ან დიზელს 
+                                იყენებს. ასევე არსებობს კომბინირებული სანთურები, 
+                                რომლებსაც საჭიროების მიხედვით შეუძლიათ ან გაზზე, 
+                                ან დიზელზე მუშაობა.
+                            </p>
+                        </div>
+                        <div class="description-main">
+                            <span style="flex-grow: 8">
+                                800$
+                            </span>
+                            <div class="order" style="flex-grow: 1" >
+                                <button class="order-btn" onclick="shopNow()">
+                                    პროდუქციის შეკვეთა
+                                </button>
+                                <div class="order-sho">
+                                    <h1>გადახდის ტიპი</h1>
+                                    <form>
+                                        <p>გთხოვთ აირჩიოთ გადახდის ტიპი</p>
+                                        <input type="radio" id="cash" name="pay" value="cash">
+                                        <label for="cash">ნაღდი ფულით</label><br>
+                                        <input type="radio" id="card" name="pay" value="card">
+                                        <label for="card">ბარათით</label><br>
+                                        <input type="radio" id="other" name="pay" value="other">
+                                        <label for="other">სხვა</label><br>
+                                    </form>
+                                    <button class="shop-now-btn" onclick="shopAlert()">
+                                        შეკვეთა
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="ask" style="flex-grow: 1">
+                                <button class="ask-btn" onclick="askNow()">
+                                    კითხვის დასმა
+                                </button>
+                                <div class="ask-no">
+                                    <h1>კითხვის დასმა</h1>
+                                    <p>გთხოვთ შეავსოთ არსებული <br>ველები</p>
+                                    <form action="">
+                                        
+                                        <label for="name">სახელი</label><br>
+                                        <input type="text" placeholder="აკაკი"> <br>
+                                        <label for="phone">ტელეფონის ნომერი</label> <br>
+                                        <input type="number" placeholder="599 123 456"><br>
+                                        <label for="email">ელ-ფოსტა</label> <br>
+                                        <input type="email" placeholder="examle@gmail.com"><br>
+                                    </form>
+                                    <button class="shop-now-btn" onclick="askAlert()">
+                                        გაგზავნა
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

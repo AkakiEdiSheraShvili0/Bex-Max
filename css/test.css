@@ -1,0 +1,312 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+header
+{
+    width: 100%;
+    background-color: #f1f1f1;
+}
+.header-nav 
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.header-nav-items
+{
+    width: 80%;
+    height: 50px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.menu
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 8px;
+}
+.menu ul li
+{
+    display: inline;
+}
+.menu a
+{
+    font-family: MyriadGEO;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+    padding: 5px 10px;
+}
+.menu li::after
+{
+    content: "";    
+    display: inline-block;
+    width: 0;
+    height: 8px;
+    border: solid 1px rgba(0, 0, 0, 0.3);
+}
+.menu li:last-child:after 
+{
+    display: none;
+}
+.menu-contact
+{
+    display: flex;
+}
+.menu-contact-icon
+{
+    height: 20px;
+    padding: 5px 10px 0 10px;
+    margin: 15px;
+    border-radius: 2px;
+    background-color: #ed1f24;
+    font-family: FontAwesome5FreeSolid;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+.contact_number
+{
+    margin: 15px 0;    
+    font-family: MyriadGEOMtavruli;
+    font-size: 10px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    text-align: left;
+    color: #bababa;
+}
+.contact_number::after
+{
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 8px;
+    border: solid 1px #707070;
+    margin-left: 9.5px;
+}
+.leng
+{
+    margin: 14px 5px auto 15px;
+    font-family: MyriadGEOMtavruli;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+}
+                        /*   /nav   */
+
+
+.main-header
+{
+    width: 100%;
+    border-bottom: solid 1px #e8e8e8;
+    background-color: #ffffff;
+}
+.products-search
+{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main-logo
+{
+    margin: 20px 0 25px 0;
+}
+.main-logo img 
+{
+    width: 100px;
+}
+.search
+{
+    margin-top: 24px;
+}
+.select::before
+{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    border: solid 4px #707070;
+}
+.search select 
+{
+    padding: 12px 58px 15px 27px;
+    border: solid 1px #e2e2e2;
+}
+.search input
+{
+    margin-left: -5px;
+    padding: 12px 58px 14px 27px;
+    border-radius: 2px;
+    border: solid 1px #e2e2e2; 
+    
+}
+.search-icon
+{
+    width: 15px;
+    margin-left: -65px;
+}
+.search-btn
+{
+    border: none;
+    background-color: #ffffff;
+}
+.product-btn
+{
+    display: flex;
+    margin-top: 24px;
+    padding: 8px 28px 5px 27px;
+    border-radius: 5px;
+    background-color: #ed1f24;
+}
+.product-btn img
+{
+    width: 20px;
+    height: 15px;
+    margin: 10px 25px 15px 0px;
+    background-color: #ed1f24;
+}
+.product-btn span
+{
+    margin-top: 8px;
+    font-family: MyriadGEOMtavruli;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+}
+            /*   /header */
+
+            /* respsive */
+.burger_menu img
+{
+    display: none;
+    width: 20px;
+}
+.burgera
+{
+    display: none;
+}
+.responsive-search img
+{
+    display: none;
+}
+            /*  /respsive */
+@media (max-width:1297px)
+{
+    .contact_number 
+    {
+        display: none;
+    }
+    .contact_number::after
+    {
+        display: none;
+    }
+}
+@media (max-width:881px)
+{
+    .menu
+    {
+        display: none;
+    }
+    .burger_menu img
+    {
+        display: block;
+        width: 30px;
+        margin: 10px;
+    }
+    .header-nav
+    {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .burgera
+    {
+        display: block;
+        margin-top: 40px;
+        margin-left: 25%;
+    }
+    .burgera ul li a
+    {
+        display: block;
+        padding: 10px 0;
+    }
+    .burgera li::after
+    {
+        display: none;
+    }
+    .contact-show
+    {
+        display: block;
+    }
+    .search
+    {
+        display: none;
+    }
+    .products-search
+    {
+        display: flex;
+        align-items: center;
+    }
+    .responsive-search
+    {
+        padding: 6px;
+        border: #bababa 2px solid;
+        border-radius: 5px;
+    }
+    .responsive-search img
+    {
+        display: block;
+        width: 30px;
+    }
+    .responsive-search-active
+    {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 124px;
+        z-index: 5;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .responsive-search-active form
+    {
+        display: flex;
+    }
+    .product-button
+    {
+        margin-top: -28px;
+    }
+}

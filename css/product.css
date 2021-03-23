@@ -1,0 +1,404 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    height: 1100px;
+}
+
+        /* header */
+            /* navbar */
+header{
+    width: 100%;
+
+}
+.header-nav{
+    width: 100%;
+    margin: auto;
+    background-color: #f1f1f1;
+}
+.header-nav-items{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.menu{
+    margin-top: 10px;
+
+}
+.menu ul li{
+    display: inline;
+}
+.menu li:after{
+    content: "";
+    width: 1px;
+    height: 15px;
+    background-color: #000;
+    display: inline-block;
+}
+.menu li:last-child:after {
+    display: none;
+}
+.menu a{
+    text-decoration: none;
+    color: #4b4c4e;
+    padding: 10px 25px;
+}
+.menu-burger img {
+  width: 20px;
+}
+.menu-burger:hover {
+    cursor: pointer;
+}
+.menu-contact{
+    display: flex;
+    margin-top: 10px;
+}
+.logo{
+    width: 20px;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+            /* /navbar */
+
+.products-search{
+    width: 80%;
+    margin: auto;
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input {
+    width: 350px;
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: 1px solid  #e2e2e2;
+}
+.search-icon {
+    width: 20px;
+    margin-left: -65px;
+    margin-top: -8px;
+}
+.respon-search img, .burger-menu img {
+  width: 40px;
+}
+.product-button button{
+    background-color: #ed1f24;
+    border-radius: 4px;
+    padding: 12px 30px;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+}
+.respons-product-button img {
+    width: 40px;
+  }
+
+
+        /* header */
+        /* main */
+main {
+    width: 100%;
+}
+.main-head {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+.main-head h1 {
+    width: 141px;
+    height: 24px;
+    font-family: MyriadGEOMtavruli;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.83;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.share {
+    display: flex;
+    align-items: center;
+}
+.share p {
+    padding: 5px 15px 5px 0px;
+    width: 133px;
+    height: 12px;
+    font-family: HelveticaNeueLTGEO;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+}
+.share p::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    display: inline-block;
+    background-color: green;
+    margin-left: 15px;
+}
+.share img {
+    margin-right: 5px;
+}
+
+
+
+                /* main-content */
+
+
+
+
+.product-info {
+    margin: auto;
+    width: 80%;
+    display: flex;
+}
+.product-photo {
+    border: solid 1px #e2e2e2;
+    background-color: #ffffff;
+}
+.product-main_photo {
+    padding: 100px;
+}
+.more-phoros img {
+    border: #e2e2e2 1px solid;
+    padding: 12px;
+    margin: 0 0 11px 11px;
+}
+.alt-photo {
+    width: 76px;
+}
+
+            /* description */
+
+.description-head h1{
+    width: 296px;
+    height: 18px;
+    margin: 54px 135px 21px 47px;
+    font-family: MyriadGEOMtavruli;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+.point {
+    margin-left: 48px;
+    font-family: HelveticaNeueLTGEO;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+}
+.point::before {
+    display: inline-block;
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    background-color: #1fed78;
+}  
+.description-body {
+    width: 100%;
+    padding:  31px 48px;
+    padding-right: 55px;
+    font-family: MyriadGEO;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+}  
+.description-body::after {
+    display: inline-block;
+    content: '';
+    width: 653px;
+    height: 0;
+    border: solid 1px #eeeeee;
+    margin-top: 46.5px;
+}     
+.description-main {
+    display: flex;
+    margin-left: 48px;
+    margin-right: 20px;
+    align-items: stretch;
+}   
+.description-main span {
+    padding: 10px 0 9px 0;
+    font-family: MyriadGEOMtavruli;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+}
+.order-btn {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ed1f24;
+    font-family: MyriadGEOMtavruli;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    padding: 15px 26px 11px 21px;    
+}
+.ask-btn {
+    border: none;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    font-family: MyriadGEOMtavruli;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+    padding: 15px 16px 11px 14px;
+}
+.description::after{
+    display: inline-block;
+    content: '';
+    width: 653px;
+    height: 0;
+    border: solid 1px #eeeeee;
+    margin: 31.5px 0 0 47.5px;
+}
+.order-sho {
+    display: none;
+}
+.order-shop {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 15px;
+    background-color: black;
+    color: whitesmoke;
+    position: absolute;
+    /* top: 50%;
+    left: 40%; */
+    font-family: HelveticaNeueLTGEO;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #4b4c4e;
+    
+    position: absolute;
+    top: 200px;
+    left: 40%;
+}
+.order-shop h1 {
+    padding-bottom: 20px;
+    font-family: MyriadGEOMtavruli;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+.order-shop form {
+    padding-bottom: 20px;
+}
+.shop-now-btn {
+    padding: 7px 15px 5px 12px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ed1f24;
+    margin-left: 30%;
+    border: none;
+}
+
+.ask-no {
+    display: none;
+}
+.ask-now {
+    align-items: center;
+    display: block;
+    width: auto ;
+    height: auto;
+    background-color: tomato;
+    border-radius: 15px;
+    padding: 10px 15px;
+    font-family: HelveticaNeueLTGEO;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    position: absolute;
+    top: 200px;
+    left: 40%;
+}
+.ask-now form {
+    display: block;
+    margin-top: 20px;
+}
+.ask-now input {
+    margin: 10px 0 15px 0;
+}
+.ask-now h1 {
+    padding: 10px 15px;
+    font-family: MyriadGEOMtavruli;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
